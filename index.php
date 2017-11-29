@@ -1,33 +1,41 @@
-<!DOCTYPE html> 
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Pagina de Calculo</title>
+		<title>Aula 05 - Ex 01</title>
 		<style>
-			body{background: #c4c4c4;}
-			fieldset{
-				width: 250px;
-				height: 120px;
-				margin: 200px 0px 0px 450px;
-				padding: 5px 5px 5px 5px;
-				border: 2px groove;
-			};
+			fieldset{margin: 100px 250px 250px 300px; width:350px;}
 		</style>
 	</head>
 	<body>
 		<fieldset>
-			<legend>Calculando</legend>
-			<form method="post" action="calcula.php"><br>
-				valor A:<input type="text" name="valorA"><br>
-				valor B:<input type="text" name="valorB"><br>
-				<select name="opcao">
-					<option>Somar</option>
-					<option>Subtrair</option>
-					<option>Dividir</option>
-					<option>Multiplicar</option>
-				</select><br>
-				<input type="submit" value="Calcular">
-				<input type="reset" value="Limpar">
+			<legend>Dados para Reserva</legend>
+			<form action="resultado.php" method="post">
+				<table>
+				<tr>
+					<td>Nome do Hóspede:</td>
+					<td><input type="text" size="20" name="nome"></td>
+				</tr>
+				<tr>
+					<td>Email para contato:</td>
+					<td><input type="text" size="20" name="email"></td>
+				</tr>
+				<tr>
+					<td>Tipo de Acomodação:</td>
+					<td>
+						<select name="tipo">
+							<option>Suite Luxo</option>
+							<option>Suite Simples</option>
+							<option>Apartamento</option>
+						</select>
+					</td>
+				<tr>	
+					<td>Período(dias):</td>
+					<td><input type="number" name="dias" min="1" max="30"></td>
+				</tr>
+				<tr><td colspan="2" align="center">
+					<input type="submit" value="Enviar">
+				</td></tr>
+				</table>
 			</form>
 		</fieldset>
 	</body>
