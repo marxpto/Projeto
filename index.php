@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Aula 05 - Ex 01</title>
+		<title>Aula 05 - Ex 02</title>
 		<style>
 			fieldset{margin: 100px 250px 250px 300px; width:350px;}
 		</style>
